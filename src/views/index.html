@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- utilizamos el titulo que establecemos en routers -->
+    <title><%= title %></title>
+ <!-- incluimos los link de bottstrap y font-awesome -->
+    <% include partials/head.html %>
+    
+
+</head>
+
+
+<body>
+<!-- incluimos la nav q tenemos en partial,  -->
+<!-- esto es gracias a el motor de plantillas en este caso ejs -->
+<% include partials/navigation.html %>
+    
+
+<div class="container">
+    <header class="row">
+        <div class="col-lg-12 text-center">
+            <img src="/img/personal-trainer.jpg" alt="una entrenadora personal" 
+             style="width:100%;"  class="animated bounceIn">
+
+        </div>
+    </header>
+</div>
+
+<!-- section one -->
+
+<div class="container fluid" id="about">
+    <div class="row bg-dark text-white p-5 text-center">
+        <div class="col-sm-6  ">
+            <i class="fab fa-youtube fa-10x"></i>
+
+        </div>
+        <div class="col-sm-6  ">
+            <h3>youtube</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quos ea, quae, optio cum sunt fugiat,
+                incidunt molestias mollitia suscipit perferendis
+                odit nobis. Doloremque debitis delectus voluptatum
+                illo voluptatem, quas tenetur?</p>
+
+        </div>
+    </div>
+
+
+</div>
+<% include partials/footer.html %>
+
+</body>
+
+</html>
